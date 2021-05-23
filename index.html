@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Conversor de Moedas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icones-de-dinheiro.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div>
+            <h1>Conversor de Moedas</h1>
+
+            <div class="convertContent">
+                <form>
+                    <label>Valor</label>
+                    <input type="text" name="valor" value="" id="valor">
+
+                    <select class="moedas1">
+                        <option value="usd1">Dolar (USD)</option>
+                        <option value="brl1" selected>Real (BRL)</option>
+                        <option value="eur1">Euro (EUR)</option>
+                    </select>
+
+                    <label>Para</label>
+                    <select class="moedas1">
+                        <option value="usd2">Dolar (USD)</option>
+                        <option value="brl2">Real (BRL)</option>
+                        <option value="eur2">Euro (EUR)</option>
+                    </select>
+
+                    <!-- <button >Converter</button> -->
+                </form>
+                
+                <a href="#" id="converter">Converter</a>
+            </div>
+
+            <div class="resultado">
+                <span id="convertido"></span>
+                <hr>
+                <h3>1 USD = R$5,30</h3> <h3>1 EUR = R$6,54</h3>
+            </div>
+        </div>       
+    </div>
+
+    <script type="text/javascript" src="js/conversor.js"></script>
+</body>
+
+</html>

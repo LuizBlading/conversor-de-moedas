@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    background-image: url("/images/bolsa-de-dinheiro.png");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    /* background-color: #7affb6; */
+    background-color: #58a174;
+    background-position: 95% 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin-bottom:  25px;
+}
+
+.content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    max-width: 1200px;
+    width: 50%;
+    /* background-color: aliceblue; */
+}
+
+.convertContent{
+    margin: 5px;
+    padding: 5px;
+}
+
+/* .resultado{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+form input{
+    margin: 0 10px;
+    padding: 0 5px;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+}
+
+form select{
+    margin-right: 10px;
+    padding: 0 5px;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+}
+
+#converter{
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: bold;
+    color:#00752d;
+    padding: 10px 30px;
+    top: 15px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#converter:hover{
+    opacity: 0.9;
+    transition: 0.4s;
+}
+
+div {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.resultado #convertido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+h3{
+    font-size: 0.8em;
+}
+
+hr{
+    border: solid 1px #fff;
+    margin: 10px 0;
+}
