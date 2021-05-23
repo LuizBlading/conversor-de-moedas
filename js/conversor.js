@@ -6,6 +6,7 @@ let moedas;
 
 let dolar = 5.30;
 let euro = 6.71;
+let realDolar = 0.19;
 
 const Convert = () => {
     let resultado;
@@ -17,19 +18,26 @@ const Convert = () => {
     // Criar a conversão de acordo com a opção escolhida
     switch (moedas)
     {
+        
         case "usd1":
-        case "usd2":
-            convertValue.innerHTML = "<h4>US$ </h4>"+valueUser;
-            break;
+            case "brl2":
+                resultado = valueUser / realDolar.toFixed(2); 
+                convertValue.innerHTML = "<h4>US$ </h4>"+(resultado.toFixed(2));
+                break;
         case "brl1":
-        case "usd2":
-            resultado = valueUser / dolar.toFixed(2);
-            convertValue.innerHTML = "<h4>R$ </h4>"+(resultado.toFixed(2));
-            break;
-        case "eur":
-            resultado = valueUser / euro.toFixed(2);
-            convertValue.innerHTML = "<h4>€$ </h4>"+(resultado.toFixed(2));
-            break;
+            case "usd2":
+                resultado = valueUser / dolar.toFixed(2);
+                convertValue.innerHTML = "<h4>R$ </h4>"+(resultado.toFixed(2));
+                break;
+        case "brl1":
+            case "eur2":
+                resultado = valueUser / euro.toFixed(2);
+                convertValue.innerHTML = "<h4>€$ </h4>"+(resultado.toFixed(2));
+                break;
+        case "usd1":
+            case "usd2":
+                convertValue.innerHTML = "<h4>US$ </h4>"+valueUser;
+                break;
         default:
             convertValue.innerHTML = "<h4 style='color: red'>Erro</h4>";
             break;
